@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.goodix.sh \
     init.tiffany.rc
 
 # Sensors
