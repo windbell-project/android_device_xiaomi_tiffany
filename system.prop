@@ -5,3 +5,6 @@
 # Camera
 persist.camera.HAL3.enabled=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# Radio
+persist.radio.aosp_usr_pref_sel=true
