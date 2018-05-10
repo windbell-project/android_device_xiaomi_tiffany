@@ -34,5 +34,8 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Root Folders
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tiffany/BoardConfigVendor.mk
