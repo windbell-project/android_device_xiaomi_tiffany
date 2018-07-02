@@ -37,6 +37,8 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
+    init.recovery.qcom.rc \
+    init.recovery.qcom.usb.rc \
     init.tiffany.rc
 
 # Sensors
