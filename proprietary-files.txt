@@ -13,11 +13,14 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 etc/morpho_lowlight4.0.xml
 lib/libMiCameraHal.so
 lib/libdualcameraddm.so
+lib/libicuuc.so:lib/libicuuc-v27.so
 lib/libjni_dualcamera.so
 lib/libmorpho_groupshot.so
 lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama.so
 lib/libmorphohht4.0.so
+lib/libminikin.so:lib/libminikin-v27.so
+lib/libskia.so:lib/libskia-v27.so
 lib/libtrueportrait.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8953.so
@@ -350,9 +353,11 @@ vendor/lib/libmmcamera_s5k5e8_ofilm.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
 # Camera isp
