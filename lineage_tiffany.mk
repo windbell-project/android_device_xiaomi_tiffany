@@ -18,17 +18,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from tissot device
+# Inherit from tiffany device
 $(call inherit-product, device/xiaomi/tiffany/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_BRAND := Xiaomi
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tiffany
-PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := lineage_tiffany
-PRODUCT_MODEL := MI 5X
+BOARD_VENDOR := Xiaomi
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Mi 5X
+PRODUCT_MANUFACTURER := Xiaomi
+TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
