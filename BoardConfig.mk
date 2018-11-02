@@ -41,6 +41,9 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Root Folders
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2018-10-05
+
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
