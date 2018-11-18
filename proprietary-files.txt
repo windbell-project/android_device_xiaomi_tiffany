@@ -6,7 +6,6 @@ vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Camera
@@ -14,11 +13,17 @@ etc/morpho_lowlight4.0.xml:vendor/etc/morpho_lowlight4.0.xml
 lib/libMiCameraHal.so:vendor/lib/libMiCameraHal.so
 lib/libdualcameraddm.so:vendor/lib/libdualcameraddm.so
 lib/libjni_dualcamera.so:vendor/lib/libjni_dualcamera.so
+lib/libmorpho_group_portrait.so:vendor/lib/libmorpho_group_portrait.so
 lib/libmorpho_groupshot.so:vendor/lib/libmorpho_groupshot.so
 lib/libmorpho_memory_allocator.so:vendor/lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama.so:vendor/lib/libmorpho_panorama.so
+lib/libmorpho_panorama_gp.so:vendor/lib/libmorpho_panorama_gp.so
 lib/libmorphohht4.0.so:vendor/lib/libmorphohht4.0.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
+lib/vendor.qti.hardware.camera.device@1.0.so:vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+lib64/libmorpho_group_portrait.so:vendor/lib64/libmorpho_group_portrait.so
+lib64/libmorpho_panorama_gp.so:vendor/lib64/libmorpho_panorama_gp.so
+lib64/vendor.qti.hardware.camera.device@1.0.so:vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libFaceGrade.so
@@ -30,6 +35,7 @@ vendor/lib/libarcsoft_beautyshot_video_algorithm.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
+vendor/lib/libmibokeh_625.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -84,9 +90,7 @@ vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_group_portrait.so
 vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libmorpho_panorama_gp.so
 vendor/lib/libmpbase.so
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
@@ -100,8 +104,6 @@ vendor/lib/libseemore.so
 vendor/lib/libubifocus.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
-vendor/lib64/libmorpho_group_portrait.so
-vendor/lib64/libmorpho_panorama_gp.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
 
 # Camera actuators
@@ -117,8 +119,6 @@ vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
 vendor/lib/libchromatix_csidtg_preview.so
 vendor/lib/libchromatix_csidtg_zsl_preview.so
-vendor/lib/libchromatix_ov12a10_4k_preview_dw9763.so
-vendor/lib/libchromatix_ov12a10_4k_video_dw9763.so
 vendor/lib/libchromatix_ov12a10_arc_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_arc_4k_video_dw9763.so
 vendor/lib/libchromatix_ov12a10_arc_common.so
@@ -171,31 +171,6 @@ vendor/lib/libchromatix_ov12a10_arc_snapshot.so
 vendor/lib/libchromatix_ov12a10_arc_video_4k.so
 vendor/lib/libchromatix_ov12a10_arc_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so
-vendor/lib/libchromatix_ov12a10_common.so
-vendor/lib/libchromatix_ov12a10_cpp_hfr_120.so
-vendor/lib/libchromatix_ov12a10_cpp_hfr_60.so
-vendor/lib/libchromatix_ov12a10_cpp_hfr_90.so
-vendor/lib/libchromatix_ov12a10_cpp_liveshot.so
-vendor/lib/libchromatix_ov12a10_cpp_preview.so
-vendor/lib/libchromatix_ov12a10_cpp_snapshot.so
-vendor/lib/libchromatix_ov12a10_cpp_video.so
-vendor/lib/libchromatix_ov12a10_cpp_video_4k.so
-vendor/lib/libchromatix_ov12a10_default_preview_dw9763.so
-vendor/lib/libchromatix_ov12a10_default_video_dw9763.so
-vendor/lib/libchromatix_ov12a10_hfr_120.so
-vendor/lib/libchromatix_ov12a10_hfr_120_dw9763.so
-vendor/lib/libchromatix_ov12a10_hfr_60.so
-vendor/lib/libchromatix_ov12a10_hfr_60_dw9763.so
-vendor/lib/libchromatix_ov12a10_hfr_90.so
-vendor/lib/libchromatix_ov12a10_hfr_90_dw9763.so
-vendor/lib/libchromatix_ov12a10_postproc.so
-vendor/lib/libchromatix_ov12a10_preview.so
-vendor/lib/libchromatix_ov12a10_snapshot.so
-vendor/lib/libchromatix_ov12a10_video_4k.so
-vendor/lib/libchromatix_ov12a10_zsl_preview_dw9763.so
-vendor/lib/libchromatix_ov12a10_zsl_video_dw9763.so
-vendor/lib/libchromatix_ov13880_4k_preview_dw9763.so
-vendor/lib/libchromatix_ov13880_4k_video_dw9763.so
 vendor/lib/libchromatix_ov13880_arc_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov13880_arc_4k_video_dw9763.so
 vendor/lib/libchromatix_ov13880_arc_common.so
@@ -248,29 +223,6 @@ vendor/lib/libchromatix_ov13880_arc_snapshot.so
 vendor/lib/libchromatix_ov13880_arc_video_4k.so
 vendor/lib/libchromatix_ov13880_arc_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov13880_arc_zsl_video_dw9763.so
-vendor/lib/libchromatix_ov13880_common.so
-vendor/lib/libchromatix_ov13880_cpp_hfr_120.so
-vendor/lib/libchromatix_ov13880_cpp_hfr_60.so
-vendor/lib/libchromatix_ov13880_cpp_hfr_90.so
-vendor/lib/libchromatix_ov13880_cpp_liveshot.so
-vendor/lib/libchromatix_ov13880_cpp_preview.so
-vendor/lib/libchromatix_ov13880_cpp_snapshot.so
-vendor/lib/libchromatix_ov13880_cpp_video.so
-vendor/lib/libchromatix_ov13880_cpp_video_4k.so
-vendor/lib/libchromatix_ov13880_default_preview_dw9763.so
-vendor/lib/libchromatix_ov13880_default_video_dw9763.so
-vendor/lib/libchromatix_ov13880_hfr_120.so
-vendor/lib/libchromatix_ov13880_hfr_120_dw9763.so
-vendor/lib/libchromatix_ov13880_hfr_60.so
-vendor/lib/libchromatix_ov13880_hfr_60_dw9763.so
-vendor/lib/libchromatix_ov13880_hfr_90.so
-vendor/lib/libchromatix_ov13880_hfr_90_dw9763.so
-vendor/lib/libchromatix_ov13880_postproc.so
-vendor/lib/libchromatix_ov13880_preview.so
-vendor/lib/libchromatix_ov13880_snapshot.so
-vendor/lib/libchromatix_ov13880_video_4k.so
-vendor/lib/libchromatix_ov13880_zsl_preview_dw9763.so
-vendor/lib/libchromatix_ov13880_zsl_video_dw9763.so
 vendor/lib/libchromatix_ov5675_qtech_common.so
 vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_120.so
 vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_60.so
@@ -339,9 +291,7 @@ vendor/lib/libmmcamera_arc_ov13880_eeprom.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so
 vendor/lib/libmmcamera_ov12a10.so
-vendor/lib/libmmcamera_ov12a10_eeprom.so
 vendor/lib/libmmcamera_ov13880.so
-vendor/lib/libmmcamera_ov13880_eeprom.so
 vendor/lib/libmmcamera_ov5675_qtech.so
 vendor/lib/libmmcamera_qtech_ov5675_eeprom.so
 vendor/lib/libmmcamera_s5k5e8_ofilm.so
