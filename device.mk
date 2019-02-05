@@ -31,7 +31,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    MiuiCamera
+    MiuiCamera \
+    camera.msm8953 \
+    libmm-qcamera
 
 # ConsumerIr
 PRODUCT_PACKAGES += \

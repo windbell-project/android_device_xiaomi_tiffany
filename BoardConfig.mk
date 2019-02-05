@@ -18,6 +18,9 @@
 
 DEVICE_PATH := device/xiaomi/tiffany
 
+# Camera
+TARGET_SUPPORT_HAL1 := false
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
