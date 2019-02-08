@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tiffany.mk
+    $(LOCAL_DIR)/aosp_tiffany.mk
