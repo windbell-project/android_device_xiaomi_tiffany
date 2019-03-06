@@ -41,4 +41,6 @@
    <!-- Does the battery LED support multiple colors?
         Used to decide if the user can change the colors -->
    <bool name="config_multiColorBatteryLed">false</bool>
+   <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
+   <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers18/com.breel.wallpapers18.soundviz.wallpaper.variations.SoundVizWallpaperV2</string>
 </resources>
