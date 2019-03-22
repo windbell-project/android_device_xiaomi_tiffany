@@ -1,7 +1,11 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
+<<<<<<< HEAD
 # Copyright (C) 2018 The LineageOS Project
+=======
+# Copyright (C) 2018-2020 The LineageOS Project
+>>>>>>> 945801c... tissot: Update for latest common extractors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,4 +29,4 @@ export VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2018
 
-./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
+"./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh" "$@"
