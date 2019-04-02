@@ -51,10 +51,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
-
 # Call the camera setup
 $(call inherit-product, vendor/xiaomi/MiuiCamera/MiuiCamera-vendor.mk)
 $(call inherit-product, vendor/xiaomi/MiuiCamera/tiffany.mk)
