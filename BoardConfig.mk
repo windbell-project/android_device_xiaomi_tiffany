@@ -38,6 +38,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 629145600
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-02-05
 
