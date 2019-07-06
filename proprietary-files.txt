@@ -344,6 +344,11 @@ vendor/lib/libmmcamera_isp_gamma40.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so
 
+# Dirac
+vendor/etc/diracmobile.config
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/soundfx/libdirac.so
+
 # Fingerprint
 lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
