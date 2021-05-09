@@ -25,6 +25,11 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Fingerprint
+SOONG_CONFIG_XIAOMI_MSM8953_BIOMETRICS_HAL_MODULES := \
+    fingerprint,fpc \
+    gf_fingerprint,goodix
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
