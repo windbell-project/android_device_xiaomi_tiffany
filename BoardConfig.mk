@@ -47,5 +47,11 @@ VENDOR_SECURITY_PATCH := 2019-02-05
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
+    /vendor/lib64/libgf_ca.so|fakelogprint.so \
+    /vendor/lib64/libgf_hal.so|fakelogprint.so
+
 # Inherit the proprietary files
 include vendor/xiaomi/tiffany/BoardConfigVendor.mk
