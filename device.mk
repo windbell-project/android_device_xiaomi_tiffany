@@ -51,6 +51,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Firmware
+$(call inherit-product, vendor/xiaomi/firmware/tiffany/firmware.mk)
+
 # Properties
 -include device/xiaomi/tiffany/prop.mk
 
