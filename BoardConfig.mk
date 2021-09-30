@@ -30,6 +30,9 @@ SOONG_CONFIG_XIAOMI_MSM8953_BIOMETRICS_HAL_MODULES := \
     fingerprint,fpc \
     gf_fingerprint,goodix
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 

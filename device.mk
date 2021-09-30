@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953
 
+# Firmware
+$(call inherit-product, vendor/xiaomi/firmware/tiffany/firmware.mk)
+
 # Properties
 -include device/xiaomi/tiffany/prop.mk
 
