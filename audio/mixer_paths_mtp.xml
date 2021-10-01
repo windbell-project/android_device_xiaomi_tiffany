@@ -64,12 +64,12 @@
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
-    <ctl name="DEC1 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="91" />
     <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC1 MUX" value="ZERO" />
     <ctl name="ADC2 MUX" value="ZERO" />
-    <ctl name="RDAC2 MUX" value="ZERO" />
+    <ctl name="RDAC2 MUX" value="RX1" />
     <ctl name="RX2 MIX2 INP2" value="ZERO" />
     <ctl name="RX2 MIX2 INP1" value="ZERO" />
     <ctl name="RX1 MIX2 INP2" value="ZERO" />
@@ -79,7 +79,7 @@
     <ctl name="RX2 MIX1 INP2" value="ZERO" />
     <ctl name="RX2 MIX1 INP1" value="ZERO" />
     <ctl name="RX1 MIX1 INP2" value="ZERO" />
-    <ctl name="RX1 MIX1 INP1" value="ZERO" />
+    <ctl name="RX1 MIX1 INP1" value="RX1" />
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
@@ -287,6 +287,7 @@
 
     <path name="deep-buffer-playback speaker">
         <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+		<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-and-headphones">
@@ -362,6 +363,7 @@
 
     <path name="low-latency-playback speaker">
         <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+		<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback speaker-and-headphones">
@@ -506,6 +508,7 @@
 
     <path name="compress-offload-playback speaker">
         <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+		<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback speaker-and-headphones">
@@ -1459,7 +1462,16 @@
     <path name="hdmi">
     </path>
 
+    <path name="earpiece">
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="RX1 Digital Volume" value="88" />
+        <ctl name="EAR PA Gain" value="POS_6_DB" />
+        <ctl name="EAR_S" value="Switch" />
+    </path>
+
     <path name="speaker">
+        <path name="earpiece" />
         <ctl name="Boost Output Voltage" value="8.5V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <!--
