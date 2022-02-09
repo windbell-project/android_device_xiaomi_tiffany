@@ -16,7 +16,7 @@
 TARGET_KERNEL_VERSION := 4.9
 
 # Inherit from common msm8953-common
--include device/xiaomi/msm8953-common/BoardConfigCommon.mk
+include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/tiffany
 
@@ -58,5 +58,5 @@ VENDOR_SECURITY_PATCH := 2019-02-05
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
-# Inherit from the proprietary version
--include vendor/xiaomi/tiffany/BoardConfigVendor.mk
+# Inherit the proprietary files
+include vendor/xiaomi/tiffany/BoardConfigVendor.mk
